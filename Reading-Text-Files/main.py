@@ -17,7 +17,7 @@ def count_words():
     counter_dictionary = {}
     symbols = [" ", ",", ".", "?", "\n"]
 
-    for word in text:
+    for word in text.split():
         if word in symbols:
             continue
         counter_dictionary[word.lower()] = counter_dictionary.get(
