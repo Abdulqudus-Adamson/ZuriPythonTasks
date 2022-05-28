@@ -10,13 +10,13 @@ class Student:
         self.name = new_name
 
     def change_age(self, new_age):
-        self.age = new_age
+        self.age = int(new_age)
 
     def add_track(self, new_track):
         self.tracks.append(new_track)
 
     def get_score(self):
-        return self.score
+        return float(self.score)
 
 
 Bob = Student(name="Bob", age=26, tracks=["FE", "BE"], score=20.90)
